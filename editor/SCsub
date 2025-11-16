@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+from misc.utility.scons_hints import *
+
+import os
+
+import editor_builders
+
+Import("env")
+
+env.editor_sources = []
+
+if env.editor_build:
+    # Register exporters
+    gen_exporters = env.CommandNoCache(
+        "export/register_exporters.gen.cpp",
+        env.Value(env.platform_exporters),
+        env.Run(editor_builders.register_exporters_builder),
+    )
+    for e in env.platform_exporters:
+        # Add all .cpp files in export folder
+        env.add_source_files(env.editor_sources, f"../platform/{e}/export/*.cpp")
+
+    env.add_source_files(env.editor_sources, "*.cpp")
+    env.add_source_files(env.editor_sources, gen_exporters)
+
+    SConscript("animation/SCsub")
+    SConscript("audio/SCsub")
+    SConscript("debugger/SCsub")
+    SConscript("docks/SCsub")
+    SConscript("export/SCsub")
+    SConscript("file_system/SCsub")
+    SConscript("gui/SCsub")
+    SConscript("icons/SCsub")
+    SConscript("inspector/SCsub")
+    SConscript("import/SCsub")
+    SConscript("plugins/SCsub")
+    SConscript("run/SCsub")
+    SConscript("settings/SCsub")
+    SConscript("scene/SCsub")
+    SConscript("script/SCsub")
+    SConscript("shader/SCsub")
+    SConscript("themes/SCsub")
+
+    lib = env.add_library("editor", env.editor_sources)
+    env.Prepend(LIBS=[lib])

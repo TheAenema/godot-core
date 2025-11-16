@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from misc.utility.scons_hints import *
+import ctypes
+from SCons.Script import *
+
+# Import
+Import("env")
+Import("env_modules")
+
+# Clone Module Environment
+env_blade = env_modules.Clone()
+
+# Add Source Files
+env_blade.add_source_files(env.modules_sources, "*.cpp")
+

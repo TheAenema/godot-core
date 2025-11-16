@@ -1,0 +1,9 @@
+short_name = "godot-core"
+name = "Godot Core"
+major = 1
+minor = 4
+patch = 0
+status = "alpha"
+module_config = ""
+website = "https://github.com/Deneuma-Studio/Deicidium"
+docs = "1.4"
