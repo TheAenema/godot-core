@@ -1,6 +1,7 @@
 <p align="center">
-  <img width="128" alt="GodotCoreLogo" src="icon_outlined.svg">
+  <img width="520" alt="GodotCoreLogo" src="logo.svg">
 </p>
+
 
 # Godot Core : Purification for Evolution
 
@@ -9,6 +10,8 @@
 Godot Core is a purged and purified version of Godot Engine with all unnecessary features removed. It comes as an extracted core with Jenova Core and the Jenova Code IDE deeply integrated into the engine.
 
 ![godotcore_screenshot](https://github.com/user-attachments/assets/3c011f0a-6703-44d1-a7c1-2ce6514db7b4)
+
+This engine variation is built for developers pursuing bespoke, design-driven editions. It is not suited to general-purpose game development.
 
 ## What's Removed
 
@@ -38,5 +41,5 @@ Godot Core is a purged and purified version of Godot Engine with all unnecessary
 7. Launch editor using `godot.core.exe --editor --path <project_directory_path>`
 
 ---
-##### Based on Godot Engine © 2014–present Juan Linietsky, Ariel Manzur and contributors. Additional modifications © 2025 Hamid Memar.
+##### Additional modifications © 2025 Hamid Memar. Based on Godot Engine © 2014–present Juan Linietsky, Ariel Manzur and contributors.
 
