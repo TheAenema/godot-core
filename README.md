@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="520" alt="GodotCoreLogo" src="logo.svg">
+  <img width="412" alt="GodotCoreLogo" src="logo.png">
 </p>
 
 
