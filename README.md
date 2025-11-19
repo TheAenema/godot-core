@@ -32,10 +32,10 @@ This engine variation is built for developers pursuing bespoke, design-driven ed
 
 ## How to Build/Use
 
-1. Download Jenova Core Library from [here](https://github.com/TheAenema/godot-core/releases/tag/jenova-core-library).
+1. Download Jenova Core Library from [here](../../releases/tag/jenova-core-library).
 2. Extract `Jenova.Core.Win64.MSVC.jnvlib` in `\modules\jenova_core\library`
 3. Use `_build.bat` or `_generate-vs.bat` to build the engine.
-4. After building the engine, Download Jenova Code IDE release from [here](https://github.com/TheAenema/godot-core/releases/tag/jenova-code-ide).
+4. After building the engine, Download Jenova Code IDE release from [here](../..//releases/tag/jenova-code-ide).
 5. Extract the IDE in `\bin\tools\jnv_ide`
 6. Create a directory with a empty file `project.godot` inside as Project directory.
 7. Launch editor using `godot.core.exe --editor --path <project_directory_path>`
