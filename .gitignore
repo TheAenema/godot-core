@@ -390,3 +390,4 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 *.generated.props
+/modules/jenova_core/library/Jenova.Core.Win64.MSVC.jnvlib
